@@ -7,7 +7,7 @@ Este é meu portfólio profissional como desenvolvedor Backend e Full Stack. Aqu
 - 🚀 Projetos em destaque com link para repositório
 - 📬 Informações de contato
 
-> 🔗 Acesse meu portfólio online: [https://seu-usuario.github.io/seu-repositorio](https://seu-usuario.github.io/seu-repositorio)
+> 🔗 Acesse meu portfólio online: https://portfolioferrari6138.netlify.app/
 
 ---
 

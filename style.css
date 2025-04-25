@@ -1,4 +1,3 @@
-/* Base Reset & Variáveis de Tema */
 * {
     margin: 0;
     padding: 0;
@@ -49,7 +48,6 @@ a:hover {
     font-weight: 600;
     color: var(--text-color);
     text-decoration: none;
-    /* ocupa espaço para empurrar demais itens à direita */
     margin-right: auto;
 }
 .logo span {
@@ -113,7 +111,7 @@ a:hover {
         color: var(--primary-color);
     }
     .navbar.active {
-        left: 0; /* sobrescrever propriedade mobile */
+        left: 0; 
     }
 }
 
@@ -309,11 +307,6 @@ a:hover {
 .footer p {
     opacity: 0.8;
 }
-
-/* Animação de scroll para revelar seções */
-.section {
-}
-
 
 
 .repo-button {

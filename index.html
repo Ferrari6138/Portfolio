@@ -3,123 +3,161 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gabriel Ferrari - Portfólio</title>
-    <!-- Google Font: Poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Boxicons Icon Library -->
-    <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css'>
+    <title>Gabriel Ferrari | Automação & Cybersecurity</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="dark-mode">
 
-    <!-- Header / Navigation -->
     <header class="header">
-        <a href="#" class="logo">Gabriel<span>.</span></a>
+        <a href="#" class="logo">G.FERRARI<span>_</span></a>
         <div class="bx bx-menu" id="menu-icon"></div>
         <nav class="navbar">
-            <a href="#about" class="active">Sobre</a>
+            <a href="#about">Sobre</a>
+            <a href="#experience">Experiência</a>
             <a href="#stacks">Stacks</a>
             <a href="#projects">Projetos</a>
             <a href="#contact">Contato</a>
         </nav>
-        <div class="theme-toggle" id="theme-toggle"><i class='bx bx-moon'></i></div>
+        <div class="theme-toggle" id="theme-toggle"><i class='bx bx-sun'></i></div>
     </header>
 
-    <!-- Main content -->
-    <main>
-        <!-- Sobre Mim Section -->
-        <section id="about" class="about section show-animate">
-            <h2>Sobre <span>Mim</span></h2>
-            <div class="about-container">
-                <div class="about-img">
-                    <img src="img/Dev.jpg" alt="Foto de Gabriel Ferrari" />
+    <main class="container">
+        <section id="about" class="about section">
+            <div class="about-grid">
+                <div class="about-img-container">
+                    <img src="img/Dev.jpg" alt="Gabriel Ferrari" class="profile-pic">
+                    <div class="img-border"></div>
                 </div>
                 <div class="about-text">
-                    <h3>Gabriel Ferrari</h3>
-                    <p>Sou desenvolvedor <strong>Back-end</strong> e <strong>Full Stack</strong> com experiência em <strong>Java</strong> (Spring Boot, JavaFX), <strong>Python</strong> (Flask, Pandas, Scikit-Learn) e <strong>JavaScript</strong> (Node.js, React). Também possuo conhecimentos em bancos de dados, especialmente <strong>MySQL</strong>. Tenho paixão por tecnologia e estou sempre aprendendo novas ferramentas e me mantendo atualizado sobre as tendências de desenvolvimento.</p>
-                    <p>Iniciei minha jornada na programação aos 16 anos e desde então venho aprimorando minhas habilidades através de projetos pessoais e estudos constantes. Atualmente, busco oportunidades para aplicar meu conhecimento como desenvolvedor em equipes profissionais e também estou disponível para projetos como freelancer.</p>
-<p><a class="repo-button" href="https://github.com/Ferrari6138?tab=repositories" target="_blank">Ver repositórios</a></p>
-</div>
+                    <h2 class="section-header">Elevando a <span>Resiliência</span></h2>
+                    <p>Especialista em <strong>Automação de Workflows</strong> e em transição estratégica para <strong>Cybersecurity</strong>. Atualmente na <strong>iTease</strong>, combino visão de desenvolvimento com administração de sistemas para implementar soluções resilientes.</p>
+                    
+                    <div class="terminal-box">
+                        <div class="terminal-header">
+                            <span class="t-dot red"></span><span class="t-dot yellow"></span><span class="t-dot green"></span>
+                        </div>
+                        <div class="terminal-content">
+                            <p><span>$</span> status --current</p>
+                            <p class="res">> Estagiário de Automação e TI</p>
+                            <p><span>$</span> certs --latest</p>
+                            <p class="res">> Cisco Junior Cybersecurity Analyst (Em progresso)</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Stacks Técnicas Section -->
-        <section id="stacks" class="stacks section alt-bg">
-            <h2>Stacks <span>Técnicas</span></h2>
-            <p class="section-subtitle">Tecnologias e ferramentas que utilizo:</p>
-            <ul class="tech-list">
-                <!-- Ícones de stacks (DevIcons) e badges de texto -->
-                <li><i class="devicon-java-plain colored" aria-label="Java"></i></li>
-                <li><i class="devicon-spring-plain colored" aria-label="Spring Boot"></i></li>
-                <li><span class="tech-badge" aria-label="JavaFX">JavaFX</span></li>
-                <li><i class="devicon-python-plain colored" aria-label="Python"></i></li>
-                <li><i class="devicon-flask-original" aria-label="Flask"></i></li>
-                <li><span class="tech-badge" aria-label="Pandas">Pandas</span></li>
-                <li><span class="tech-badge" aria-label="Scikit-Learn">Scikit-Learn</span></li>
-                <li><i class="devicon-javascript-plain colored" aria-label="JavaScript"></i></li>
-                <li><i class="devicon-nodejs-plain colored" aria-label="Node.js"></i></li>
-                <li><i class="devicon-react-original colored" aria-label="React"></i></li>
-                <li><i class="devicon-mysql-plain colored" aria-label="MySQL"></i></li>
-            </ul>
+        <section id="experience" class="experience section">
+            <h2 class="section-title">Experiência <span>Profissional</span></h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Agosto/2025 - Atualmente</span>
+                        <h3>Estagiário de Automação e TI</h3>
+                        <h4>iTease Soluções Tecnológicas</h4>
+                        <ul>
+                            <li>Desenvolvimento de workflows no <strong>n8n</strong> e <strong>Power Automate</strong> via APIs e bancos de dados.</li>
+                            <li>Gestão de <strong>Microsoft 365 Admin Center</strong>: licenciamento e governança de dados no SharePoint.</li>
+                            <li>Suporte N1/N2 remoto via <strong>Datto RMM</strong> e troubleshooting de hardware/software.</li>
+                            <li>Deploy e manutenção de ambientes utilizando <strong>Docker e Portainer</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Julho/2024 - Julho/2025</span>
+                        <h3>Desenvolvedor Full Stack Freelancer</h3>
+                        <ul>
+                            <li>Criação de APIs RESTful e aplicações desktop com foco em persistência de dados.</li>
+                            <li>Desenvolvimento de soluções personalizadas em <strong>Java</strong> e <strong>Python</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- Projetos em Destaque Section -->
+        <section id="stacks" class="stacks section">
+            <h2 class="section-title">Minhas <span>Stacks</span></h2>
+            <div class="stacks-grid">
+                <div class="stack-card">
+                    <i class='bx bx-shield-alt-2'></i>
+                    <h3>Cyber & Infra</h3>
+                    <p>Datto RMM, Bitdefender API, Docker, Portainer, IAM.</p>
+                </div>
+                <div class="stack-card">
+                    <i class='bx bx-terminal'></i>
+                    <h3>Automação</h3>
+                    <p>n8n, Microsoft Power Automate, Integração de APIs REST.</p>
+                </div>
+                <div class="stack-card">
+                    <i class='bx bx-code-block'></i>
+                    <h3>Dev</h3>
+                    <p>Python (Pandas/Scikit-Learn), Java (Spring Boot), SQL.</p>
+                </div>
+            </div>
+        </section>
+
         <section id="projects" class="projects section">
-            <h2>Projetos <span>em Destaque</span></h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>CinemaApp</h3>
-                    <p><strong>Tecnologias:</strong> Java, JavaFX, MySQL</p>
-                    <p>Aplicação desktop para gerenciamento de um cinema, permitindo o cadastro de filmes, salas e horários de sessões, com interface gráfica em JavaFX e persistência de dados em banco MySQL.</p>
-<p><a class="repo-button" href="https://github.com/Ferrari6138/CinemaApp" target="_blank">Ver repositório</a></p>
-</div>
-                <div class="project-card">
-                    <h3>Controle Financeiro</h3>
-                    <p><strong>Tecnologias:</strong> Python, Flask, Pandas</p>
-                    <p>Aplicação web de controle financeiro pessoal que permite registrar receitas e despesas, categorizá-las e visualizar relatórios básicos. Desenvolvida em Python usando o framework Flask para a interface web e a biblioteca Pandas para análise dos dados financeiros.</p>
-</div>
-                <div class="project-card">
-                    <h3>Simulador de Banco</h3>
-                    <p><strong>Tecnologias:</strong> Java</p>
-                    <p>Projeto de simulação de operações bancárias, incluindo criação de contas, depósitos, saques e transferências. Implementado em Java, este simulador funciona em modo console, reforçando conceitos de orientação a objetos e estruturas de dados.</p>
-<p><a class="repo-button" href="https://github.com/Ferrari6138/BankSimulator" target="_blank">Ver repositório</a></p>
-</div>
-                <div class="project-card">
-                    <h3>Conversor de Moedas</h3>
-                    <p><strong>Tecnologias:</strong> JavaScript, React</p>
-                    <p>Aplicação web para conversão de moedas em tempo real. Desenvolvida com React, ela consome uma API de taxas de câmbio para converter valores entre diferentes moedas através de uma interface simples e responsiva no navegador.</p>
-<p><a class="repo-button" href="https://github.com/Ferrari6138/CurrencyConverter" target="_blank">Ver repositório</a></p>
-</div>
-                <div class="project-card">
-                    <h3>Moto Walter - PRIVADO</h3>
-                    <p><strong>Tecnologias:</strong> Node.js, Express, HTML/CSS</p>
-                    <p>Website institucional desenvolvido para a oficina mecânica Moto Walter. Possui um back-end simples em Node.js com Express para gerenciar formulários de contato e um front-end estático responsivo em HTML5, CSS3 e JavaScript para apresentar os serviços oferecidos e informações de contato.</p>
-</div>
+            <h2 class="section-title">Projetos <span>Chave</span></h2>
+            <div class="project-grid">
+                <div class="card">
+                    <div class="card-content">
+                        <i class='bx bx-bell'></i>
+                        <h3>Incident Response (RMM)</h3>
+                        <p>Monitoramento e alertas críticos via WhatsApp para servidores offline.</p>
+                        <a href="https://github.com/Ferrari6138" class="card-link" target="_blank">Ver detalhes <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <i class='bx bx-cloud-upload'></i>
+                        <h3>Portainer Backup Flow</h3>
+                        <p>Automação de backups criptografados semanais integrados ao n8n.</p>
+                        <a href="https://github.com/Ferrari6138" class="card-link" target="_blank">Ver detalhes <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <i class='bx bx-movie-play'></i>
+                        <h3>CinemaApp</h3>
+                        <p>Sistema de gerenciamento completo em JavaFX com MySQL.</p>
+                        <a href="https://github.com/Ferrari6138/CinemaApp" class="card-link" target="_blank">Ver código <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Contato Section -->
-        <section id="contact" class="contact section alt-bg">
-            <h2>Entre em <span>Contato</span></h2>
-            <div class="contact-info">
-                <p>Estou disponível para oportunidades e colaborações. Me chame por e-mail ou pelas redes abaixo:</p>
-                <p><i class='bx bx-envelope'></i> <a href="mailto:gabrielferrari446@gmail.com">gabriel@gmail.com</a></p>
-                <p><i class='bx bxl-linkedin'></i> <a href="https://linkedin.com/in/gabriel-ferrari-41455426b">Gabriel Ferrari</a></p>
-                <p><i class='bx bxl-github'></i> <a href="https://github.com/Ferrari6138">@GabrielFerrari</a></p>
+        <section id="contact" class="contact section">
+            <h2 class="section-title">Contato <span>& Redes</span></h2>
+            <div class="contact-container">
+                <div class="contact-box">
+                    <i class='bx bx-envelope'></i>
+                    <p>Email</p>
+                    <a href="mailto:gabrielferrari446@gmail.com">gabrielferrari446@gmail.com</a>
+                </div>
+                <div class="contact-box">
+                    <i class='bx bxl-linkedin-square'></i>
+                    <p>LinkedIn</p>
+                    <a href="https://linkedin.com/in/gabriel-ferrari-41455426b" target="_blank">Conectar</a>
+                </div>
+                <div class="contact-box">
+                    <i class='bx bxl-github'></i>
+                    <p>GitHub</p>
+                    <a href="https://github.com/Ferrari6138" target="_blank">Seguir</a>
+                </div>
             </div>
         </section>
-        
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2025 Gabriel Ferrari. Todos os direitos reservados.</p>
+        <p>&copy; 2026 Gabriel Ferrari | Focado em Segurança e Resiliência Digital.</p>
     </footer>
 
-    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>

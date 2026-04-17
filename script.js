@@ -1,32 +1,72 @@
-// Menu Mobile
-let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
+// Menu mobile
+const menuIcon = document.querySelector('#menu-icon');
+const navbar   = document.querySelector('.navbar');
 
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
+};
+
+// Fecha menu ao clicar em link
+navbar.querySelectorAll('a').forEach(link => {
+    link.onclick = () => {
+        menuIcon.classList.remove('bx-x');
+        navbar.classList.remove('active');
+    };
+});
+
+// Scroll progress bar
+const progressBar = document.getElementById('scrollProgress');
+
+function updateProgress() {
+    const scrollTop  = window.scrollY;
+    const docHeight  = document.documentElement.scrollHeight - window.innerHeight;
+    const pct        = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    progressBar.style.width = pct + '%';
 }
 
-// Ativação de Links no Scroll
-let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header nav a');
+// Active nav link por seção
+const sections  = document.querySelectorAll('section');
+const navLinks  = document.querySelectorAll('header nav a');
 
-window.onscroll = () => {
+function highlightNav() {
+    const scrollY = window.scrollY;
+
     sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 150;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
+        const top    = sec.offsetTop - 180;
+        const bottom = top + sec.offsetHeight;
+        const id     = sec.getAttribute('id');
 
-        if (top >= offset && top < offset + height) {
-            navLinks.forEach(links => {
-                links.classList.remove('active');
-                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
-            });
+        if (scrollY >= top && scrollY < bottom) {
+            navLinks.forEach(link => link.classList.remove('active'));
+            const active = document.querySelector(`header nav a[href="#${id}"]`);
+            if (active) active.classList.add('active');
         }
     });
+}
 
-    // Fechar menu mobile ao rolar
+// Fecha menu no scroll
+window.addEventListener('scroll', () => {
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
-};
+    updateProgress();
+    highlightNav();
+});
+
+// Reveal on scroll — Intersection Observer
+const reveals = document.querySelectorAll('.reveal');
+
+const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            revealObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.12 });
+
+reveals.forEach(el => revealObserver.observe(el));
+
+// Init
+updateProgress();
+highlightNav();

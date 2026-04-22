@@ -203,20 +203,7 @@
                 <!-- Grid de outros projetos -->
                 <div class="project-grid">
 
-                    <div class="project-card reveal">
-                        <div class="project-card-header">
-                            <i class='bx bx-bell'></i>
-                            <div class="project-links">
-                                <a href="https://github.com/Ferrari6138/N8N-Projects" target="_blank" title="Ver no GitHub"><i class='bx bxl-github'></i></a>
-                            </div>
-                        </div>
-                        <h3>Incident Response (RMM)</h3>
-                        <p>Monitoramento e alertas críticos via WhatsApp para servidores offline. Integrado ao Datto RMM via n8n.</p>
-                        <div class="tech-tags">
-                            <span>n8n</span><span>Datto RMM</span><span>WhatsApp API</span>
-                        </div>
-                    </div>
-
+                    <!-- Card 1: Portainer Backup (já existia, mantido) -->
                     <div class="project-card reveal">
                         <div class="project-card-header">
                             <i class='bx bx-cloud-upload'></i>
@@ -225,37 +212,54 @@
                             </div>
                         </div>
                         <h3>Portainer Backup Flow</h3>
-                        <p>Automação de backups criptografados semanais de containers Docker, orquestrado pelo n8n.</p>
+                        <p>Automação de backups criptografados semanais de containers Docker via API do Portainer, com upload para OneDrive e notificação por e-mail, orquestrado pelo n8n.</p>
                         <div class="tech-tags">
-                            <span>n8n</span><span>Docker</span><span>Portainer</span>
+                            <span>n8n</span><span>Docker</span><span>Portainer API</span><span>OneDrive</span>
                         </div>
                     </div>
 
+                    <!-- Card 2: TiFlux Link Monitor (NOVO) -->
                     <div class="project-card reveal">
                         <div class="project-card-header">
-                            <i class='bx bx-store'></i>
+                            <i class='bx bx-link'></i>
                             <div class="project-links">
-                                <a href="https://github.com/Ferrari6138/InventoryControlSystem" target="_blank" title="Ver no GitHub"><i class='bx bxl-github'></i></a>
+                                <a href="https://github.com/Ferrari6138/tiflux-link-monitor-n8n" target="_blank" title="Ver no GitHub"><i class='bx bxl-github'></i></a>
+                            </div>
+                        </div>
+                        <h3>TiFlux Link Monitor</h3>
+                        <p>Pipeline de monitoramento que consome tickets do TiFlux (Zabbix e Ubiquiti), detecta quedas de link em tempo real, notifica a equipe via WhatsApp e confirma o restabelecimento automaticamente.</p>
+                        <div class="tech-tags">
+                            <span>n8n</span><span>TiFlux API</span><span>Zabbix</span><span>Ubiquiti</span><span>Baserow</span><span>WhatsApp API</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Unifi Device Monitor (NOVO) -->
+                    <div class="project-card reveal">
+                        <div class="project-card-header">
+                            <i class='bx bx-wifi'></i>
+                            <div class="project-links">
+                                <a href="https://github.com/Ferrari6138/unifi-device-monitor-n8n" target="_blank" title="Ver no GitHub"><i class='bx bxl-github'></i></a>
+                            </div>
+                        </div>
+                        <h3>Unifi Device Monitor</h3>
+                        <p>Sistema de monitoramento contínuo de dispositivos Unifi via API. Detecta desconexões, dispara alertas por e-mail e mantém o inventário de estado sincronizado no Baserow com lógica de deduplicação de alertas.</p>
+                        <div class="tech-tags">
+                            <span>n8n</span><span>Unifi API</span><span>Baserow</span><span>SMTP</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: CinemaApp (mantido como 4º card) -->
+                    <div class="project-card reveal">
+                        <div class="project-card-header">
+                            <i class='bx bx-code-alt'></i>
+                            <div class="project-links">
+                                <a href="https://github.com/Ferrari6138/CinemaApp" target="_blank" title="Ver no GitHub"><i class='bx bxl-github'></i></a>
                             </div>
                         </div>
                         <h3>Inventory Control System</h3>
                         <p>Sistema de controle de estoque em Java com persistência em banco de dados relacional e interface desktop.</p>
                         <div class="tech-tags">
                             <span>Java</span><span>MySQL</span>
-                        </div>
-                    </div>
-
-                    <div class="project-card reveal">
-                        <div class="project-card-header">
-                            <i class='bx bx-task'></i>
-                            <div class="project-links">
-                                <a href="https://github.com/Ferrari6138/To-Do-List-angular" target="_blank" title="Ver no GitHub"><i class='bx bxl-github'></i></a>
-                            </div>
-                        </div>
-                        <h3>To-Do List Angular</h3>
-                        <p>Aplicação de gerenciamento de tarefas construída com Angular e TypeScript.</p>
-                        <div class="tech-tags">
-                            <span>Angular</span><span>TypeScript</span>
                         </div>
                     </div>
 
